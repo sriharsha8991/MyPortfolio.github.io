@@ -1,0 +1,342 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+body {
+    background-color: #2c3e50; /* Dark background */
+    color: #ecf0f1; /* Light text */
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #34495e;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 2000;
+    transition: background-color 0.3s;
+}
+
+.theme-toggle:hover {
+    background-color: #2c3e50;
+}
+
+/* Light Theme */
+body.light {
+    background-color: #f4f4f4; /* Light background */
+    color: #333; /* Dark text */
+}
+
+body.light nav,
+body.light header,
+body.light footer {
+    background-color: #eee;
+}
+
+body.light .theme-toggle {
+    background-color: #ddd;
+}
+
+body.light .theme-toggle i {
+    color: #333;
+}
+body.light-theme .projects .project-card p {
+    color: #333;  /* Change this to whatever color you want for the light theme */
+}
+/* Navigation Bar */
+nav {
+    background: #34495e;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    margin: 0;
+}
+
+nav a {
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Summary section with picture and description */
+./* ... previous styles ... */
+
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Summary section with picture and description */
+.summary-content {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 50px 0;
+    width: 95%;
+    border-radius: 30px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6);
+    background-color: rgba(255, 255, 255, 0.1); /* A subtle translucent background */
+    margin-top: 50px;
+}
+
+.profile-pic {
+    flex: 1; /* Take up equal space */
+    display: flex;
+    justify-content: center;
+    align-items: left;
+}
+
+.profile-pic img {
+    max-width: 80%; /* Avoid taking up the entire width */
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); /* A subtle shadow around the image */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.profile-pic img:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0.5, 0.9);
+}
+
+.description {
+    flex: 2; /* Take up double the space of the image */
+    padding: 20px;
+}
+
+/* ... rest of the styles ... */
+
+
+/* Education, Skills, Projects, Profiles, and Certificates sections */
+section {
+    padding: 50px 100px;
+}
+/* ... previous styles ... */
+
+.education-section {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-top: 30px; /* Additional space */
+}
+
+.education-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    width: 60%; /* Adjust as per requirement */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.education-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.timestamp {
+    display: block;
+    margin: 10px 0;
+    font-style: italic;
+    color: #bdc3c7; /* Slightly muted color for timestamp */
+}
+
+/* Additional Styling */
+.education-card strong {
+    font-size: 18px;
+    color: #3498db; /* Give a distinct color to the institution name */
+    margin-bottom: 5px;
+}
+
+.education-card p {
+    margin-top: 5px;
+}
+
+/* Project Card Hover Effect */
+
+.skills-section {
+    width: 85%;
+    padding: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: left;
+    
+}
+
+.skill-domain {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 35%; /* Adjust as per requirement */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.skill-domain:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.skill-domain strong {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.skill-domain ul {
+    list-style-type: none;
+}
+
+.skill-domain li {
+    margin-bottom: 5px;
+    align-items: left;
+}
+
+
+.project-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 30px 0;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    border-left: 6px solid #2c3e50;
+    transform: translateY(0); /* Initial state - not lifted */
+}
+
+.project-card:hover {
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px); /* Lifting effect on hover */
+    border-left-color: #000000;
+}
+
+.project-card h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #fafafa; /* Dark color for headings */
+    position: relative;
+}
+
+.project-card h3:after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    height: 3px;
+    width: 50px;
+    background: #e74c3c; /* Line below heading for visual distinction */
+}
+
+/* Default dark theme styles for project descriptions */
+.project-card p {
+    font-size: 1.1em;
+    color: #ffffff;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Light theme styles */
+body.light-theme .project-card p {
+    color: #333;
+}
+
+/* Adding a gradient button to potentially lead to a detailed project page or GitHub repo */
+.project-card a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-image: linear-gradient(90deg, #e74c3c, #f39c12);
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.project-card a:hover {
+    background-image: linear-gradient(90deg, #f39c12, #e74c3c);
+    box-shadow: 5 6px 15px rgba(231, 76, 60, 0.4);
+    
+}
+hr {
+    border: none;
+    border-top: 4px solid #ccc;  /* Make the line bold by increasing the border thickness */
+    width: 30%;                 /* Short width, adjust as needed */
+    margin: 20px 0;             /* Top and bottom margin */
+    float: left;                /* Align to the left */
+}
+
+
+
+
+footer {
+    background-color: #333;
+    padding: 20px 0;
+    color: #fff;
+}
+
+.footer-content {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content h3 {
+    margin-bottom: 20px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between links */
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between icon and text */
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+.social-links img {
+    vertical-align: middle;
+}
+
+footer p {
+    margin-top: 20px;
+}
+
